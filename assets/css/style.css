@@ -168,7 +168,7 @@ nav ul {
     filter: brightness(100%);
 }
 .label-wrapper {
-    flex: 2 10%;
+    flex: 1 25%;
 }
 .label-title {
     background: linear-gradient(
@@ -198,10 +198,12 @@ nav ul {
 }
 .para-wrapper {
     flex: 4 30%;
-    padding: 20px;
+    padding: 25px;
+    
 }
 .para-wrapper p {
     font-size: 40px;
+    /* max-width: 80%; */
 }
 /* style circles */
 .circle1,
