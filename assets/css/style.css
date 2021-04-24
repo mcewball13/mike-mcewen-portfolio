@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+body    {
+    background-color: rgb(255, 249, 243);
+}
 html {
     scroll-behavior: smooth;
 }
@@ -24,7 +27,8 @@ h5 {
 }
 
 p, 
-a {
+a,
+pre {
     font-family: var(--paragraph-font);
 }
 
@@ -77,19 +81,45 @@ nav ul {
 }
 /* style hero */
 .hero {
+    padding: 20px 30px;
+}
+.hero-plate {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px 30px;
     align-items: center;
     text-align: left;
+    background-color: aqua;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .hero img {
     flex: 1;
     width: 40%;
-    height: 40%;
-    max-height: 700px;
-    max-width: 700px;
+    height: auto;
+    max-height: 600px;
+    max-width: 600px;
+    padding: 40px;
 }
+.quote-container {
+    flex: 2;
+    padding: 0 20px;
+}
+.quote-container h2, .quote-container pre {
+    font-size: 4vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+.quote-container h2::before {
+    content: "\275D";
+    font-size: 8vw;
+    margin-bottom: -40px;
+    display: block;
+
+}
+.indent-five {
+    text-indent: 5em;
+}
+
 
