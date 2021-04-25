@@ -78,7 +78,11 @@ nav ul li {
     transition: .25s ease-in-out;
 }
 nav ul li:hover {
-    background: #bdbfc6;
+    background: linear-gradient(
+        to right bottom,
+        rgba(187, 187, 187, 0.7),
+        rgba(182, 182, 182, 0.2)
+    );
 }
 
 .contact-info-mini {
@@ -374,4 +378,8 @@ nav ul li:hover {
     right: 10%;
     height: 50px;
     width: 50px;
+}
+
+@media screen {
+    
 }
