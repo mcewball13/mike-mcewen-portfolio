@@ -112,7 +112,8 @@ nav ul {
     z-index: 3;
 }
 .label-wrapper {
-    flex: 1 25%;
+    /* flex: 1 30vw; */
+    width: 30vw;
 }
 /* style hero */
 
