@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,7 +29,9 @@
             </div>
             <!--  container for logo and nav   -->
             <div class="nav-container">
-                <span class="header-name"><h1>mike mcewen</h1></span>
+                <span class="header-name"
+                    ><a href="#top"><h1>mike mcewen</h1></a></span
+                >
                 <nav>
                     <ul>
                         <li><a href="#my-work">My Work</a></li>
@@ -40,7 +42,7 @@
             </div>
         </header>
         <main>
-            <section class="section-plate hero">
+            <section class="section-plate" id="hero">
                 <img
                     src="./assets/images/Headshots20140111-0022.jpg"
                     alt="Mike McEwen's Headshot"
@@ -57,67 +59,98 @@
                     </h2>
                 </div>
             </section>
-            <section class="section-plate my-work">
+            <!-- MY WORK -->
+            <section class="section-plate" id="my-work">
                 <div class="feature-work">
                     <div class="feature-overlay">
-						<img src="./assets/images/twr-thumbnail.jpg" alt="Screen Shot of The Wiggle Room">
-					</div>
-					<div class="label-wrapper">
-						<h2 class="label-title">my work</h2>
-					</div>
+                        <img
+                            src="./assets/images/twr-thumbnail.jpg"
+                            alt="Screen Shot of The Wiggle Room"
+                        />
+                        <h3>The Wiggle Room</h3>
+                    </div>
+                    <div class="label-wrapper">
+                        <h2 class="label-title">my work</h2>
+                    </div>
                 </div>
-				<div class="secondary-work">
-					<div class="overlay">
-						<img src="./assets/images/horiseon-thumbnail.jpg" alt="">
-					</div>
-					<div class="overlay">
-						<img src="./assets/images/twr-thumbnail.jpg" alt="">
-					</div>
-					<div class="overlay">
-						<img src="./assets/images/twr-thumbnail.jpg" alt="">
-					</div>
-				</div>
+                <div class="secondary-work">
+                    <div class="overlay">
+                        <img
+                            src="./assets/images/horiseon-thumbnail.jpg"
+                            alt=""
+                        />
+                        <h3>Horiseon</h3>
+                    </div>
+                    <div class="overlay">
+                        <img src="./assets/images/twr-thumbnail.jpg" alt="" />
+                        <h3>placeholder</h3>
+                    </div>
+                    <div class="overlay">
+                        <img src="./assets/images/twr-thumbnail.jpg" alt="" />
+                        <h3>placeholder</h3>
+                    </div>
+                </div>
             </section>
-			<section class="section-plate about-me">
-				<div class="para-wrapper">
-					<p>My name is Mike McEwen. I got into development in 2014 using mainly wordpress. From there I learned HTML and CSS. I used those three technologies until 2021 where I decided to take my developemnt to the next level. I went to UCLA Extension and learned all the most modern technologies.  </p>
-				</div>
-				<div class="label-wrapper">
-					<h2 class="label-title">about me</h2>
-				</div>
-			</section>
-			<section class="section-plate contact-me">
-				<div class="label-wrapper">
-					<h2 class="label-title">contact</h2>
-				</div>
-				<div class="contact-details-wrapper">
-					<div class="contact-details">
-						<span>
-							<a href="tel:4109726392">410.972.6392</a>
-							<img src="./assets/icons/phone-icon.png" alt="">
-						</span>
-						<span>
-								<a href="https:www.bakedbeandesign.com">bakedbeandesign.com</a>
-								<img src="./assets/icons/website-icon.png" alt="">
-						</span>
-						<span>
-								<a href="https://github.com/mcewball13">Github</a>
-								<img src="./assets/icons//github.png" alt="">
-					
-						</span>
-						<span>
-								<a href="https://www.linkedin.com/in/michael-mcewen-52b54b180/">Linkdin</a>
-								<img src="./assets/icons/linkedin.png" alt="">
-						</span>
-					</div>
-					<div class="contact-img-wrapper">
-						<div class="contact-img">
-							<img src="./assets/images/contact-me.jpg" alt="Contact me image of a man holding a phone">
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="circle1"></div>
+            <!-- ABOUT ME -->
+            <section class="section-plate" id="about-me">
+                <div class="para-wrapper">
+                    <p>
+                        My name is Mike McEwen. I got into development in 2014
+                        using mainly wordpress. From there I learned HTML and
+                        CSS. I used those three technologies until 2021 where I
+                        decided to take my developemnt to the next level. I went
+                        to UCLA Extension and learned all the most modern
+                        technologies.
+                    </p>
+                </div>
+                <div class="label-wrapper">
+                    <h2 class="label-title">about me</h2>
+                </div>
+            </section>
+            <!-- CONTACT ME -->
+            <section class="section-plate" id="contact-me">
+                <div class="label-wrapper">
+                    <h2 class="label-title">contact</h2>
+                </div>
+
+                <div class="contact-details-wrapper">
+                    <!-- contact details left column -->
+                    <div class="contact-details">
+                        <span>
+                            <a href="tel:4109726392">410.972.6392</a>
+                            <img src="./assets/icons/phone-icon.png" alt="" />
+                        </span>
+                        <span>
+                            <a href="https:www.bakedbeandesign.com"
+                                >bakedbeandesign.com</a
+                            >
+                            <img src="./assets/icons/website-icon.png" alt="" />
+                        </span>
+                        <span>
+                            <a href="https://github.com/mcewball13">Github</a>
+                            <img src="./assets/icons//github.png" alt="" />
+                        </span>
+                        <span>
+                            <a
+                                href="https://www.linkedin.com/in/michael-mcewen-52b54b180/"
+                                >Linkdin</a
+                            >
+                            <img src="./assets/icons/linkedin.png" alt="" />
+                        </span>
+                    </div>
+                    <!-- contact image -->
+                    <div class="contact-img-wrapper">
+                        <div class="contact-img">
+                            <img
+                                src="./assets/images/contact-me.jpg"
+                                alt="Contact me image of a man holding a phone"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- circles in the background incl. pseudo -->
+            <div class="circle1"></div>
             <div class="circle2"></div>
         </main>
     </body>
