@@ -66,7 +66,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    flex-flow: wrap;
+    flex-flow: nowrap;
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
@@ -117,7 +117,6 @@ nav ul li:hover {
 /* style section plates */
 .section-plate {
     display: flex;
-    width: 90%;
     background: white;
     margin: 50px;
     padding: 20px;
@@ -135,15 +134,13 @@ nav ul li:hover {
 }
 /* style hero */
 #hero img {
-    flex: 1;
-    width: 40%;
+    width: 50%;
     height: auto;
     max-height: 600px;
     max-width: 600px;
     padding: 40px;
 }
 .quote-container {
-    flex: 2;
     padding: 0 20px;
 }
 .quote-container h2,
@@ -260,7 +257,6 @@ nav ul li:hover {
     flex-wrap: wrap;
 }
 .para-wrapper {
-    flex: 4 30%;
     padding: 30px;
 }
 .para-wrapper p {
@@ -268,7 +264,6 @@ nav ul li:hover {
 }
 /* contact me */
 #contact-me {
-    display: flex;
     flex-flow: column nowrap;
     align-items: flex-end;
 }
@@ -380,6 +375,100 @@ nav ul li:hover {
     width: 50px;
 }
 
-@media screen {
-    
+@media screen and (max-width: 980px) {
+    .nav-container {
+        padding: 0 10px;
+    }
+    .label-wrapper {
+        width: 100%;
+        text-align: center;
+
+    }
+    .label-wrapper h2 {
+        font-size: 3rem;
+    }
+    #about-me h2 {
+        width: 100%;
+    }
+    .feature-overlay {
+        order: 2;
+    }
+    .contact-img-wrapper {
+        width: 70%;
+    }
+    .contact-details span a, .contact-details span img {
+        font-size: 1.5rem;
+        height: 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        padding-top: 20%;
+    }
+    .header-name {
+        text-align: center;
+    }
+    .nav-container nav {
+        flex: 1 100%;
+    }
+    #hero img {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    main {
+        padding-top: 30%;
+    }
+    .section-plate {
+        margin: 10px;
+        padding: 10px;
+    }
+    .label-title {
+        padding: 5px;
+    }
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    #hero img {
+        margin: 0 auto;
+        width: 80%;
+
+    }
+    .quote-container h2::before {
+        margin-bottom: -30px;
+        margin-left: -225px;
+        font-size: 10vw;
+    }
+    .quote-container h2, .quote-container pre {
+        font-size: 30px;
+    }
+    .feature-overlay {
+        margin: 0px;
+    }
+    .feature-overlay h3 {
+        bottom: 5px;
+        padding: 2px;
+    }
+    .overlay {
+        margin: 5px;
+    }
+    .overlay h3 {
+        padding: 2px;
+        bottom: 5px;
+    }
+    .para-wrapper {
+        padding: 15px;
+    }
+    .para-wrapper p {
+        font-size: 30px;
+        text-align: center;
+    }
+    .contact-img-wrapper {
+        display: none;
+    }
+    .contact-details {
+        border-right: 5px solid var(--primary-color);
+        padding-right: 10px;
+    }
 }
