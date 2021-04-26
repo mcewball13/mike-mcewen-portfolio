@@ -109,7 +109,6 @@ nav ul li:hover {
     flex: 3;
     padding-left: 20px;
 }
-/* style main */
 /* style section plates */
 .section-plate {
     display: flex;
@@ -215,7 +214,7 @@ nav ul li:hover {
     border-radius: 10px;
     margin-right: 20px;
 }
-/* secondazry work section */
+/* secondary work section */
 .secondary-work {
     display: flex;
     justify-content: space-around;
@@ -371,7 +370,7 @@ nav ul li:hover {
     height: 50px;
     width: 50px;
 }
-
+/* media queries */
 @media screen and (max-width: 980px) {
     .nav-container {
         padding: 0 10px;
