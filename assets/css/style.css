@@ -190,6 +190,9 @@ nav ul li:hover {
     padding: 20px;
     text-align: center;
 }
+.feature-overlay a {
+    width: 100%;
+}
 
 .feature-work img,
 .secondary-work img {
