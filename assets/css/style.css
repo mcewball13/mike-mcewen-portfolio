@@ -38,6 +38,9 @@ h4,
 h5 {
     font-family: var(--heading-font);
 }
+h1 {
+    font-size: 48px;
+}
 h3 {
     font-size: 25px;
 }
@@ -45,11 +48,10 @@ p,
 a,
 pre {
     font-family: var(--paragraph-font);
+    color: var(--secondary-color);
 }
 
-h1 {
-    font-size: 48px;
-}
+
 blockquote {
     font-size: 50px;
     white-space: pre;
@@ -57,7 +59,6 @@ blockquote {
 /* style header */
 header a {
     text-decoration: none;
-    color: var(--secondary-color);
 }
 nav {
     align-items: flex-end;
@@ -78,11 +79,7 @@ nav ul li {
     transition: .25s ease-in-out;
 }
 nav ul li:hover {
-    background: linear-gradient(
-        to right bottom,
-        rgba(187, 187, 187, 0.7),
-        rgba(182, 182, 182, 0.2)
-    );
+    background: #a8aab0
 }
 
 .contact-info-mini {
@@ -255,6 +252,7 @@ nav ul li:hover {
 /* style about me */
 #about-me {
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .para-wrapper {
     padding: 30px;
@@ -414,6 +412,21 @@ nav ul li:hover {
     #hero img {
         padding: 20px;
     }
+    .contact-img-wrapper {
+        display: none;
+    }
+    .contact-details {
+        border-right: 5px solid var(--primary-color);
+        padding-right: 10px;
+    }
+    .feature-overlay h3 {
+        bottom: 5px;
+        padding: 2px;
+    }
+    .overlay h3 {
+        padding: 2px;
+        bottom: 5px;
+    }
 }
 @media screen and (max-width: 575px) {
     main {
@@ -446,17 +459,11 @@ nav ul li:hover {
     .feature-overlay {
         margin: 0px;
     }
-    .feature-overlay h3 {
-        bottom: 5px;
-        padding: 2px;
-    }
+    
     .overlay {
         margin: 5px;
     }
-    .overlay h3 {
-        padding: 2px;
-        bottom: 5px;
-    }
+    
     .para-wrapper {
         padding: 15px;
     }
@@ -464,11 +471,5 @@ nav ul li:hover {
         font-size: 30px;
         text-align: center;
     }
-    .contact-img-wrapper {
-        display: none;
-    }
-    .contact-details {
-        border-right: 5px solid var(--primary-color);
-        padding-right: 10px;
-    }
+    
 }
